@@ -29,10 +29,6 @@ public final class FindMeetingQuery {
     ArrayList<TimeRange> unavailable_times = get_unavailable_times(
       required_attendees, events);
     return find_available_times(request.getDuration(), unavailable_times);
-
-    //ActiveQuery query = new ActiveQuery(request);
-    //ArrayList<TimeRange> unavailable_times = query.get_unavailable_times(events);
-    //return query.find_available_times(unavailable_times);
   }
 
   Set<String> get_required_attendees(MeetingRequest request) {
